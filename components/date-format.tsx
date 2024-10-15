@@ -31,9 +31,9 @@ const FormatFullTimeStamp = ({ date, locale = ptBR }: DateProps) => {
   });
 };
 
-const FormatMonthYear = (date: string) => {
+const FormatMonthYear = ({ date, locale = ptBR }: DateProps) => {
   return format(new Date(date), "MMM yyyy", {
-    locale: ptBR,
+    locale,
   });
 };
 
