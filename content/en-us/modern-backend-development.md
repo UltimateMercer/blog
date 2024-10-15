@@ -8,6 +8,7 @@ tags:
   - "Node.js"
   - "NestJS"
   - "API"
+lang: "en-us"
 ---
 
 Building modern backend systems requires understanding key frameworks like Node.js and NestJS. In this article, we'll discuss the fundamentals of backend development and why NestJS is becoming a popular choice for building robust and scalable APIs.

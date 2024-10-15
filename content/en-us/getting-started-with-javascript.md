@@ -8,6 +8,7 @@ tags:
   - "Programming"
   - "Web Development"
   - "Beginner"
+lang: "en-us"
 ---
 
 JavaScript is a versatile programming language used for web development. In this article, we’ll explore the core concepts needed to start coding with JavaScript, including variables, loops, and basic DOM manipulation.

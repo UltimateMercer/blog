@@ -8,6 +8,7 @@ tags:
   - "UI/UX"
   - "Consistency"
   - "Design"
+lang: "en-us"
 ---
 
 Design systems are an essential tool for creating cohesive and scalable digital products. They consist of a collection of reusable components, design guidelines, and documentation, ensuring that teams can collaborate and maintain a consistent user experience.
