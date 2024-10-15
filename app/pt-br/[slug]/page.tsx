@@ -10,14 +10,10 @@ export async function generateStaticParams() {
 }
 
 export default function Page({ params }: { params: { slug: string } }) {
-  console.log(params);
   const articles = getArticles({ lang: "pt-br" });
-  console.log(articles.map((obj) => obj.slug));
   const article = articles.find(
     (article) => article.slug === "pt-br/" + params.slug
   );
-
-  console.log(article);
 
   if (!article) return notFound();
 
