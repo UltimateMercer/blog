@@ -40,11 +40,12 @@ export const Article = defineDocumentType(() => ({
       },
       required: false,
     },
+    lang: { type: 'string', required: true },
   },
   computedFields: {
     slug: {
       type: "string",
-      resolve: (doc) => doc._raw.flattenedPath,
+      resolve: (doc) => `${doc._raw.flattenedPath}`
     },
   }
 }
