@@ -5,6 +5,7 @@ import { ThemeToggle } from "./theme-toggle";
 import { useRouter, useSelectedLayoutSegments } from "next/navigation";
 import { Button } from "./ui/button";
 import { CaretLeft } from "@phosphor-icons/react";
+import { LangSwitcher } from "./lang-switcher";
 
 export function NavigationBar({
   className,
@@ -52,7 +53,8 @@ export function NavigationBar({
             </Button>
           )}
         </nav>
-        <div className="">
+        <div className="flex items-center gap-4">
+          <LangSwitcher />
           <ThemeToggle />
         </div>
       </div>
