@@ -1,25 +1,33 @@
 import { format } from "date-fns";
-import { ptBR } from "date-fns/locale";
+import { ptBR, enUS } from "date-fns/locale";
 
 interface DateProps {
   date: string;
+  locale?: typeof ptBR | typeof enUS;
 }
 
-const FormatDate = ({ date }: DateProps) => {
+const FormatDate = ({ date, locale = ptBR }: DateProps) => {
   return format(new Date(date), "dd MMM yyyy", {
-    locale: ptBR,
+    locale,
   });
 };
 
-const FormatFullDate = ({ date }: DateProps) => {
-  return format(new Date(date), "dd 'de' MMMM 'de' yyyy'", {
-    locale: ptBR,
+const FormatFullDate = ({ date, locale = ptBR }: DateProps) => {
+  const localePattern =
+    locale === ptBR ? "dd 'de' MMMM 'de' yyyy" : "dd MMMM yyyy";
+  return format(new Date(date), localePattern, {
+    locale,
   });
 };
 
-const FormatFullTimeStamp = ({ date }: DateProps) => {
-  return format(new Date(date), "dd 'de' MMMM 'de' yyyy', às' H:mm", {
-    locale: ptBR,
+const FormatFullTimeStamp = ({ date, locale = ptBR }: DateProps) => {
+  const localePattern =
+    locale === ptBR
+      ? "dd 'de' MMMM 'de' yyyy', às' H:mm"
+      : "dd MMMM 'de' yyyy', at' H:mm";
+
+  return format(new Date(date), localePattern, {
+    locale,
   });
 };
 
