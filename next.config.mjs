@@ -3,7 +3,8 @@
 import { withContentlayer } from "next-contentlayer";
 
 const nextConfig = {
-  basePath: '/blog',
+  basePath: "/blog",
+  reactStrictMode: true,
   images: {
     unoptimized: true,
   },
