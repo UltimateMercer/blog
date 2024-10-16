@@ -2,7 +2,7 @@
 title: "Understanding Design Systems"
 description: "An overview of design systems, their importance in UI/UX design, and how they help maintain consistency in digital products."
 date: "2024-09-20"
-image:
+image: "https://i.imgur.com/55Kcg9V.jpeg"
 tags:
   - "Design Systems"
   - "UI/UX"
