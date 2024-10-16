@@ -71,9 +71,16 @@ const headingElements: Record<string, React.ElementType> = {
 };
 
 function createHeading(level: number) {
-  const Element = headingElements[level];
+  const Element = headingElements[level] || headingElements[1];
   return ({ children }: any) => {
-    const slug = slugify(children);
+    const text = React.Children.toArray(children).reduce((acc, child) => {
+      if (typeof child === "string") {
+        return acc + child;
+      }
+      return acc;
+    }, "");
+
+    const slug = typeof text === "string" ? slugify(text) : "";
     return (
       <Element id={slug}>
         <a href={`#${slug}`} className="anchor" key={`link-${slug}`} />
