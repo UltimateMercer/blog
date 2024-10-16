@@ -1,39 +1,35 @@
+import type { DateProps } from "@/utils/interfaces";
 import { format } from "date-fns";
 import { ptBR, enUS } from "date-fns/locale";
 
-interface DateProps {
-  date: string;
-  locale?: typeof ptBR | typeof enUS;
-}
-
-const FormatDate = ({ date, locale = ptBR }: DateProps) => {
+const FormatDate = ({ date, locale = "en-us" }: DateProps) => {
   return format(new Date(date), "dd MMM yyyy", {
-    locale,
+    locale: locale === "en-us" ? enUS : ptBR,
   });
 };
 
-const FormatFullDate = ({ date, locale = ptBR }: DateProps) => {
+const FormatFullDate = ({ date, locale = "en-us" }: DateProps) => {
   const localePattern =
-    locale === ptBR ? "dd 'de' MMMM 'de' yyyy" : "dd MMMM yyyy";
+    locale === "en-us" ? "dd MMMM yyyy" : "dd 'de' MMMM 'de' yyyy";
   return format(new Date(date), localePattern, {
-    locale,
+    locale: locale === "en-us" ? enUS : ptBR,
   });
 };
 
-const FormatFullTimeStamp = ({ date, locale = ptBR }: DateProps) => {
+const FormatFullTimeStamp = ({ date, locale = "en-us" }: DateProps) => {
   const localePattern =
-    locale === ptBR
-      ? "dd 'de' MMMM 'de' yyyy', às' H:mm"
-      : "dd MMMM 'de' yyyy', at' H:mm";
+    locale === "en-us"
+      ? "MMMM dd yyyy', at' H:mm"
+      : "dd 'de' MMMM 'de' yyyy', às' H:mm";
 
   return format(new Date(date), localePattern, {
-    locale,
+    locale: locale === "en-us" ? enUS : ptBR,
   });
 };
 
-const FormatMonthYear = ({ date, locale = ptBR }: DateProps) => {
+const FormatMonthYear = ({ date, locale = "en-us" }: DateProps) => {
   return format(new Date(date), "MMM yyyy", {
-    locale,
+    locale: locale === "en-us" ? enUS : ptBR,
   });
 };
 

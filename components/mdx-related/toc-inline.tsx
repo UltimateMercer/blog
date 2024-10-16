@@ -5,11 +5,8 @@
  * @prop {string} url
  */
 
-interface TocHeading {
-  value: string;
-  depth: number;
-  url: string;
-}
+import type { TocHeading } from "@/utils/interfaces";
+
 /**
  * Generates an inline table of contents
  *

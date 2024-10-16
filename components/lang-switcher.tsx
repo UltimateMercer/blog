@@ -18,11 +18,7 @@ import {
 } from "@/components/ui/tooltip";
 
 import { Languages } from "lucide-react";
-
-interface LanguageStore {
-  language: "pt-br" | "en-us";
-  setLanguage: (language: string) => void;
-}
+import type { LanguageStore } from "@/utils/interfaces";
 
 export function LangSwitcher() {
   const { language, setLanguage } = useLanguageStore() as LanguageStore;
