@@ -11,16 +11,18 @@ const SimpleLayout = ({ doc, children }: ArticleLayoutProps) => {
 
   return (
     <section className="main-article py-4">
-      <div className="article-grid">
-        <h5 className="article-meta font-semibold tracking-wide">
+      <div className="article-grid !pb-0">
+        <h5 className="font-sans font-semibold tracking-wide">
           <FormatFullTimeStamp date={date} locale={language} />
         </h5>
-        <h1 className="md:text-4xl text-3xl font-extrabold tracking-wide mb-4">
+        <h1 className="md:text-4xl text-3xl font-bold tracking-wide mb-4">
           {title}
         </h1>
-        <article className="prose dark:prose-dark">{children}</article>
+      </div>
+      <article className="article-grid prose dark:prose-dark">
+        {children}
         {Array.isArray(tags) && tags.length > 0 && (
-          <div className="mb-2 flex flex-wrap gap-1">
+          <div className="my-2 flex flex-wrap gap-1">
             {tags.map((tag) => (
               <Badge key={tag} variant="default" className="text-xs">
                 {tag}
@@ -28,7 +30,7 @@ const SimpleLayout = ({ doc, children }: ArticleLayoutProps) => {
             ))}
           </div>
         )}
-      </div>
+      </article>
     </section>
   );
 };
