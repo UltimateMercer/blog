@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import localFont from "next/font/local";
-import "./globals.css";
+import { Inter } from "next/font/google";
+import "@/assets/blklight.scss";
+// import "./globals.css";
 import { NavigationBar } from "@/components/navigation-bar";
 import Footer from "@/components/footer";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} font-sans background-texture antialiased`}
       >
         <ThemeProvider
           attribute="class"
