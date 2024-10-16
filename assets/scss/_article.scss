@@ -39,7 +39,7 @@
   .article-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 10px 760px 10px 1fr 1fr;
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 1.5rem;
   }
 
@@ -181,7 +181,7 @@
   .tc-article-grid {
     display: grid;
     grid-template-columns: 1fr 10px 5fr 10px 1fr;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .tc-article-grid > * {
@@ -267,7 +267,7 @@
   .tc-article-grid,
   .alter-article-content {
     letter-spacing: 0.01em;
-    font-size: 20px;
+    font-size: 18px;
 
     h1,
     h2 {
