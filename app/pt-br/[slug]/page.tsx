@@ -1,4 +1,5 @@
 import { FormatFullTimeStamp } from "@/components/date-format";
+import { MDXComponents } from "@/components/mdx";
 import { getArticles } from "@/services";
 import { notFound } from "next/navigation";
 
@@ -18,13 +19,12 @@ export default function Page({ params }: { params: { slug: string } }) {
   if (!article) return notFound();
 
   return (
-    <div className="container mx-auto my-5">
-      <h1 className="text-3xl font-bold">{article.title}</h1>
-      <p className="text-lg">{article.description}</p>
-      <p>
-        <FormatFullTimeStamp date={article.date} />
-      </p>
-      <article>{article.body.raw}</article>
-    </div>
+    <>
+      <MDXComponents
+        layout={article.image ? "basic-layout" : "simple-layout"}
+        doc={article}
+        code={article.body.code}
+      />
+    </>
   );
 }
