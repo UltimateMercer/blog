@@ -118,14 +118,14 @@ export const Card = ({
   slug,
 }: ArticleCardProps) => {
   return (
-    <article className="relative !border rounded-lg transition-all min-h-[120px] flex flex-row gap-5 md:flex-row bg-background/20  backdrop-blur-md backdrop-filter hover:shadow pt-6 px-5 pb-5 mb-2">
-      <div className="absolute -top-4 bg-background dark:bg-black inline-flex items-center px-2 py-1.5 rounded font-medium tracking-wide leading-none text-black dark:text-white !border">
+    <article className="group relative !border rounded-lg transition-all min-h-[120px] flex flex-row gap-5 md:flex-row bg-background/20  backdrop-blur-md backdrop-filter hover:shadow pt-6 px-5 pb-5 mb-2 hover:hover-card-dark hover:dark:hover-card-light">
+      <div className="absolute -top-4 bg-background dark:bg-black inline-flex items-center px-2 py-1.5 rounded font-medium tracking-wide leading-none text-black dark:text-white !border ">
         <FormatFullDate date={date} />
       </div>
-      <div className="h-32 w-48 rounded-lg border">
+      <div className="h-36 w-52 rounded-lg border">
         <img
           alt={title}
-          className="h-32 w-48 rounded-lg !object-cover border"
+          className="h-36 w-52 rounded-lg !object-cover border"
           src={"https://i.imgur.com/55Kcg9V.jpeg"}
           style={{
             objectFit: "cover",
