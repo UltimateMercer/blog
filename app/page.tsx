@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main>
       <div className="container mx-auto py-8">
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-6">
           <h1 className="text-3xl font-bold">
             {language === "en-us" ? "Articles" : "Artigos"}
           </h1>
