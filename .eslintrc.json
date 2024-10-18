@@ -4,6 +4,7 @@
     "@next/next/no-img-element": 0,
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/no-unused-vars": 0,
-    "react/display-name": 0
+    "react/display-name": 0,
+    "@typescript-eslint/no-require-imports": 0
   }
 }
