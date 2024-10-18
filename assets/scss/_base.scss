@@ -1,6 +1,8 @@
-.background-texture {
-  background-image: url("../../public/images/noisy.png");
-  background-attachment: local;
+@layer utilities {
+  .background-texture {
+    background-image: url("../../public/images/noisy.png");
+    background-attachment: local;
+  }
 }
 
 ::-webkit-scrollbar {

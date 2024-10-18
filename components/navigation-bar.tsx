@@ -6,6 +6,8 @@ import { useRouter, useSelectedLayoutSegments } from "next/navigation";
 import { Button } from "./ui/button";
 import { CaretLeft } from "@phosphor-icons/react";
 import { LangSwitcher } from "./lang-switcher";
+import { useLanguageStore } from "@/store/useLanguageStore";
+import type { LanguageStore } from "@/utils/interfaces";
 
 export function NavigationBar({
   className,
@@ -13,6 +15,7 @@ export function NavigationBar({
 }: React.HTMLAttributes<HTMLElement>) {
   const router = useRouter();
   const segments = useSelectedLayoutSegments();
+  const { language } = useLanguageStore() as LanguageStore;
 
   return (
     <div className="border-b sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backgrop-filter]:bg-background/60">
@@ -48,8 +51,8 @@ export function NavigationBar({
               onClick={() => router.back()}
               aria-label="Voltar a página anterior"
             >
-              <CaretLeft size={24} />
-              Voltar
+              <CaretLeft size={20} />
+              {language === "en-us" ? "Back" : "Voltar"}
             </Button>
           )}
         </nav>
