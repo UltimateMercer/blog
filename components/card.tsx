@@ -119,7 +119,7 @@ export const Card = ({
 }: ArticleCardProps) => {
   return (
     <article className="group relative !border rounded-lg transition-all min-h-[120px] flex flex-row gap-5 md:flex-row bg-background/20  backdrop-blur-md backdrop-filter hover:shadow pt-6 px-5 pb-5 mb-2 hover:hover-card-dark hover:dark:hover-card-light">
-      <div className="absolute -top-4 bg-background dark:bg-black inline-flex items-center px-2 py-1.5 rounded font-medium tracking-wide leading-none text-black dark:text-white !border ">
+      <div className="absolute -top-4 bg-background inline-flex items-center px-2 py-1.5 rounded font-medium tracking-wide leading-none text-black dark:text-white !border">
         <FormatFullDate date={date} />
       </div>
       <div className="h-36 w-52 rounded-lg border">
@@ -132,9 +132,9 @@ export const Card = ({
           }}
         />
       </div>
-      <div className="flex flex-1 flex-col gap-1 overflow-hidden">
+      <div className="flex flex-1 flex-col gap-1 overflow-hidden py-1">
         <Link href={`blog/${slug}`} className="hover:underline">
-          <h2 className="text-xl font-bold leading-normal">{title}</h2>
+          <h2 className="text-2xl font-bold leading-normal">{title}</h2>
         </Link>
         <p className="mb-2 text-sm text-gray-600 dark:text-gray-300 line-clamp-3">
           {description}
