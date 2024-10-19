@@ -27,6 +27,7 @@ export interface ArticleCardProps {
   date: string;
   tags?: string[];
   image?: string;
+  slug: string;
 }
 
 export interface TocHeading {
