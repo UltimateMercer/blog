@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import localFont from "next/font/local";
-import { Inter } from "next/font/google";
+import { Inter, Barlow, JetBrains_Mono } from "next/font/google";
 import "@/assets/blklight.scss";
 import { NavigationBar } from "@/components/navigation-bar";
 import Footer from "@/components/footer";
@@ -11,6 +11,20 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
+});
+
+const barlow = Barlow({
+  subsets: ["latin"],
+  variable: "--font-barlow",
+  display: "swap",
+  weight: ["200", "400", "500", "600", "700", "800", "900"],
+});
+
+const jetBrainsMono = JetBrains_Mono({
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--font-jetbrains-mono",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const geistSans = localFont({
@@ -40,7 +54,7 @@ export default function RootLayout({
   return (
     <Html>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} font-sans background-texture antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${barlow.variable} ${jetBrainsMono.variable} font-sans background-texture antialiased`}
       >
         <ThemeProvider
           attribute="class"
