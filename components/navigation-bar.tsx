@@ -48,8 +48,8 @@ export function NavigationBar({
           {segments && segments.length > 1 && (
             <Button
               variant={"link"}
-              onClick={() => router.back()}
-              aria-label="Voltar a página anterior"
+              onClick={() => router.push("/")}
+              aria-label={language === "en-us" ? "Back" : "Voltar"}
             >
               <CaretLeft size={20} />
               {language === "en-us" ? "Back" : "Voltar"}
