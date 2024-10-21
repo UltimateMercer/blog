@@ -3,7 +3,6 @@ import { getArticles } from "@/services";
 
 type Props = {
   params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
 };
 
 export async function generateStaticParams() {
@@ -14,7 +13,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata(
-  { params, searchParams }: Props,
+  { params }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const articles = getArticles({ lang: "en-us" });
