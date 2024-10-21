@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "vitest"
+    "test": "contentlayer build && vitest",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -76,7 +77,9 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/testing-library__jest-dom": "^5.14.9",
     "@vitejs/plugin-react": "^4.3.2",
+    "cypress": "^13.15.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.15",
     "jsdom": "^25.0.1",
