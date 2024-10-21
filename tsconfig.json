@@ -19,10 +19,11 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"],
+      "@/*": ["./*", "./app/*"],
       "contentlayer/generated": ["./.contentlayer/generated"]
     }
   },
+  "types": ["vitest/globals", "@testing-library/jest-dom"],
   "include": [
     "next-env.d.ts",
     "**/*.ts",
