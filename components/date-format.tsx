@@ -10,7 +10,7 @@ const FormatDate = ({ date, locale = "en-us" }: DateProps) => {
 
 const FormatFullDate = ({ date, locale = "en-us" }: DateProps) => {
   const localePattern =
-    locale === "en-us" ? "dd MMMM yyyy" : "dd 'de' MMMM 'de' yyyy";
+    locale === "en-us" ? "MMMM dd yyyy" : "dd 'de' MMMM 'de' yyyy";
   return format(new Date(date), localePattern, {
     locale: locale === "en-us" ? enUS : ptBR,
   });

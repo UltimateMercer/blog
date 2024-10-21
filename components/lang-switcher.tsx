@@ -28,7 +28,7 @@ export function LangSwitcher() {
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger asChild>
-            <DropdownMenuTrigger asChild>
+            <DropdownMenuTrigger id="lang-toggle-trigger" asChild>
               <Button variant="outline" size="icon">
                 <Languages className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all " />
               </Button>
@@ -44,12 +44,14 @@ export function LangSwitcher() {
 
       <DropdownMenuContent>
         <DropdownMenuItem
+          id="lang-toggle-en"
           className="cursor-pointer"
           onClick={() => setLanguage("en-us")}
         >
           English
         </DropdownMenuItem>
         <DropdownMenuItem
+          id="lang-toggle-pt"
           className="cursor-pointer"
           onClick={() => setLanguage("pt-br")}
         >
