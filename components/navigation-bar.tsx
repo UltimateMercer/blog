@@ -1,4 +1,5 @@
 "use client";
+import * as React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "./theme-toggle";
@@ -13,6 +14,7 @@ export function NavigationBar({
   className,
   ...props
 }: React.HTMLAttributes<HTMLElement>) {
+  const returnBtn = React.useRef("return_btn");
   const router = useRouter();
   const segments = useSelectedLayoutSegments();
   const { language } = useLanguageStore() as LanguageStore;
@@ -47,6 +49,7 @@ export function NavigationBar({
           </div>
           {segments && segments.length > 1 && (
             <Button
+              id={returnBtn.current}
               variant={"link"}
               onClick={() => router.push("/")}
               aria-label={language === "en-us" ? "Back" : "Voltar"}
