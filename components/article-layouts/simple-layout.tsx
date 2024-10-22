@@ -1,4 +1,5 @@
 "use client";
+import * as React from "react";
 import { FormatFullTimeStamp } from "../date-format";
 import { Badge } from "../ui/badge";
 import { useLanguageStore } from "@/store/useLanguageStore";
@@ -6,11 +7,12 @@ import type { ArticleLayoutProps, LanguageStore } from "@/utils/interfaces";
 import { Author } from "../author";
 
 const SimpleLayout = ({ doc, children }: ArticleLayoutProps) => {
-  const { title, tags, date, image = "" } = doc;
+  const { title, tags, date } = doc;
+  const article = React.useRef("main_article");
   const { language } = useLanguageStore() as LanguageStore;
 
   return (
-    <section className="main-article py-4">
+    <section id={article.current} className="main-article py-4">
       <div className="article-grid !pb-0">
         <h5 className="font-sans font-semibold tracking-wide">
           <FormatFullTimeStamp date={date} locale={language} />

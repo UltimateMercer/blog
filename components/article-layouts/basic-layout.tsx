@@ -1,4 +1,5 @@
 "use client";
+import * as React from "react";
 import { FormatFullTimeStamp } from "../date-format";
 import { Badge } from "../ui/badge";
 import type { ArticleLayoutProps, LanguageStore } from "@/utils/interfaces";
@@ -7,10 +8,11 @@ import { Author } from "../author";
 
 const BasicLayout = ({ doc, children }: ArticleLayoutProps) => {
   const { title, tags, date, image = "" } = doc;
+  const article = React.useRef("main_article");
   const { language } = useLanguageStore() as LanguageStore;
 
   return (
-    <section className="main-article">
+    <section id={article.current} className="main-article">
       <div className="header-basic">
         <div className="header-basic-content">
           <h5 className="font-sans font-semibold tracking-wide">
