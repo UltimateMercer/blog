@@ -5,7 +5,7 @@ import { useLanguageStore } from "@/store/useLanguageStore";
 // import { getArticles } from "@/services";
 
 vi.mock("@/services", () => ({
-  getArticles: ({ lang }) =>
+  getArticles: ({ lang }: { lang: string }) =>
     [
       {
         title: "Understanding Design Systems",
