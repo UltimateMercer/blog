@@ -7,6 +7,7 @@ import type { LanguageStore } from "@/utils/interfaces";
 
 export default function Home() {
   const { language } = useLanguageStore() as LanguageStore;
+  const listArticles = React.useRef("list_articles");
   const articles = React.useMemo(
     () => getArticles({ lang: language }),
     [language]
@@ -19,15 +20,21 @@ export default function Home() {
           <h1 className="text-3xl font-bold" id="heading_articles">
             {language === "en-us" ? "Articles" : "Artigos"}
           </h1>
-          {articles.map((article) => (
-            <Card key={article.slug} {...article} />
-          ))}
+          <section id={listArticles.current}>
+            {articles.map((article, index) => (
+              <Card
+                key={article.slug}
+                data-testid={`article-card-${index}`}
+                {...article}
+              />
+            ))}
 
-          {/* {articles.map((article) => (
+            {/* {articles.map((article) => (
             <GlassCard key={article.slug} {...article} />
           ))} */}
-          {articles.length === 0 && <p>No articles found.</p>}
-          {/* <Card /> */}
+            {articles.length === 0 && <p>No articles found.</p>}
+            {/* <Card /> */}
+          </section>
         </div>
       </div>
     </main>
