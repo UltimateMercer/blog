@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import Home from "../app/page";
+import Home from "../../app/page";
 import { useLanguageStore } from "@/store/useLanguageStore";
 // import { getArticles } from "@/services";
 
