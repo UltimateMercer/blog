@@ -22,8 +22,11 @@ const config: Config = {
   coverageProvider: "v8",
 
   moduleNameMapper: {
-    "^@/components/(.*)$": "<rootDir>/components/$1",
+    // "^@/components/(.*)$": "<rootDir>/components/$1",
+    "^@/(.*)$": "<rootDir>/$1",
   },
+
+  testMatch: ["**/tests/jest/**/*.test.tsx"],
 
   // The test environment that will be used for testing
   testEnvironment: "jsdom",
