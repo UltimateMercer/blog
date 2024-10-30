@@ -1,7 +1,8 @@
 import { Badge } from "@/components/ui/badge";
 import { FormatFullDate } from "./date-format";
 import Link from "next/link";
-import type { ArticleCardProps } from "@/utils/interfaces";
+import type { ArticleCardProps, LanguageStore } from "@/utils/interfaces";
+import { useLanguageStore } from "@/store/useLanguageStore";
 
 export function GlassCard({
   title = "The Future of AI: Advancements and Challenges",
@@ -59,16 +60,17 @@ export const Card = ({
   image = "https://i.imgur.com/jm9zFhK.jpg",
   slug,
 }: ArticleCardProps) => {
+  const { language } = useLanguageStore() as LanguageStore;
   return (
     <article className="group relative !border rounded-lg shadow-lg transition-all min-h-[120px] flex flex-row gap-5 md:flex-row bg-background/20  backdrop-blur-md backdrop-filter hover:shadow pt-6 px-5 pb-5 mb-2 hover:hover-card-dark hover:dark:hover-card-light">
       <div className="absolute -top-4 bg-background inline-flex items-center px-2 py-1.5 rounded font-medium tracking-wide leading-none text-black dark:text-white !border">
-        <FormatFullDate date={date} />
+        <FormatFullDate date={date} locale={language} />
       </div>
       <div className="h-36 w-52 rounded-lg border">
         <img
           alt={title}
           className="h-36 w-52 rounded-lg !object-cover border"
-          src={"https://i.imgur.com/55Kcg9V.jpeg"}
+          src={image ? image : "/public/ultimate-mercer-base.jpg"}
           style={{
             objectFit: "cover",
           }}
