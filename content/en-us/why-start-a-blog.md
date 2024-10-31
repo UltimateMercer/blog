@@ -1,5 +1,5 @@
 ---
-title: "Why Start a Blog? My Decision and Goals"
+title: "Why Start a Blog?"
 description: "A reflection on the creation of my personal blog, discussing the importance of sharing projects and experiences to develop communication and writing skills."
 date: "2024-10-29 19:47"
 image: "/blog/articles/ultimate-mercer-base.jpg"
