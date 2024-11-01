@@ -40,10 +40,10 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: "Blog - Ultimate Mercer",
-    template: "%s - Blog - Ultimate Mercer",
+    default: "Blog by Ultimate Mercer",
+    template: "%s - Blog by Ultimate Mercer",
   },
-  description: "Blog - Ultimate Mercer",
+  description: "Blog by Ultimate Mercer",
 };
 
 export default function RootLayout({
