@@ -14,7 +14,7 @@ const BasicLayout = ({ doc, children }: ArticleLayoutProps) => {
   return (
     <section id={article.current} className="main-article">
       <div className="header-basic">
-        <div className="header-basic-content">
+        <div className="header-basic-content px-4">
           <h5 className="font-sans font-semibold tracking-wide">
             <FormatFullTimeStamp date={date} locale={language} />
           </h5>
