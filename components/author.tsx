@@ -32,18 +32,18 @@ export const Author = () => {
 
   return (
     <div className="my-6">
-      <h3 className="mb-2 md:text-left text-center">
+      <h3 className="mb-3 md:text-left text-center">
         {language === "en-us" ? "Written by:" : "Escrito por:"}
       </h3>
-      <div className="flex md:flex-row flex-col items-center">
+      <div className="flex md:flex-row gap-6 flex-col items-center">
         <Image
           src={"/blog/images/me.jpg"}
-          className={`w-36 h-36 rounded-full object-cover hover:scale-105 hover:ring-2 ring-gray-300 hover:shadow-lg transition-all md:mb-0 !mt-0 mb-4 `}
+          className={`w-36 h-36 rounded-full object-cover hover:scale-110 hover:ring-2 ring-gray-300 hover:shadow-lg transition-all !my-0`}
           width={144}
           height={144}
           alt={`Image`}
         />
-        <div className="flex flex-col flex-1 justify-center md:ml-6">
+        <div className="flex flex-col flex-1 justify-center">
           <h4 className="text-3xl font-bold tracking-wide mb-2">
             Julian Silva da Cunha
           </h4>
