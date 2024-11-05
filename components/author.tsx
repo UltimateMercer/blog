@@ -27,7 +27,7 @@ export const Author = () => {
   };
 
   const ariaLabel = (text: string) => {
-    return language === "en-us" ? `Acess ${text}` : `Acessar ${text}`;
+    return language === "en-us" ? `Access ${text}` : `Acessar ${text}`;
   };
 
   return (
