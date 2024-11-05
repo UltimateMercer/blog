@@ -27,5 +27,4 @@ Dito isso, pretendo usar este espaço para compartilhar ideias, projetos e outro
 Se conseguiu ler até aqui, agradeço pela atenção.
 
 Atenciosamente,
-
 Julian Silva da Cunha
