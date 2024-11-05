@@ -2,15 +2,15 @@
 title: "Criando uma aplicação com a API do GitHub: minha experiência e aprendizados"
 description: "Compartilho minha experiência ao desenvolver uma aplicação que exibe dados de usuários do GitHub, utilizando tecnologias como SvelteKit, Octokit e Vercel."
 date: "2024-11-05 11:34"
-image: ""
+image: "/blog/articles/github-data-project-logo.jpg"
 tags:
-  - "github"
-  - "sveltekit"
-  - "api"
-  - "web-development"
-  - "deploy"
-  - "Vercel"
-  - "Octokit"
+  - Github
+  - SvelteKit
+  - API
+  - Desenvolvimento web
+  - Deploy
+  - Vercel
+  - Octokit
 lang: "pt-br"
 ---
 
@@ -26,7 +26,9 @@ Para desenvolver essa aplicação, utilizei algumas tecnologias atuais, entre el
 - **v0**: usei essa IA como base para criar o componente de exibição de contribuições e para configurar queries de contribuições e repositórios fixados em GraphQL. Como v0 é voltado para React, tive que ajustar o componente para que funcionasse corretamente em Svelte.
 - **Lucide Icons, Phosphor Icons e fonte Inter**: escolhi essas bibliotecas de ícones e a fonte Inter para a tipografia geral da aplicação.
 
-A aplicação está disponível em [https://githubdata.ultimatemercer.com/](https://githubdata.ultimatemercer.com/?un=ultimatemercer). Você também pode acessá-la com um nome de usuário pré-definido, por exemplo: [https://githubdata.ultimatemercer.com/?un=ultimatemercer](https://githubdata.ultimatemercer.com/?un=ultimatemercer). Assim, ao carregar o site, ele já exibe os dados do usuário.
+A aplicação está disponível em [https://githubdata.ultimatemercer.com/](https://githubdata.ultimatemercer.com/?un=ultimatemercer).
+
+Você também pode acessá-la com um nome de usuário pré-definido, por exemplo: [https://githubdata.ultimatemercer.com/?un=ultimatemercer](https://githubdata.ultimatemercer.com/?un=ultimatemercer). Assim, ao carregar o site, ele já exibe os dados do usuário.
 
 Realizei um teste de desempenho com o Lighthouse para verificar performance, acessibilidade, boas práticas e SEO, e obtive resultados excelentes. Embora haja uma leve oscilação na performance, os resultados iniciais foram melhores do que eu esperava, dado que não foquei tanto em otimização de performance.
 

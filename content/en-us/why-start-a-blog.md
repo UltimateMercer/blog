@@ -26,6 +26,5 @@ With that in mind, I plan to use this space to share ideas, projects, and other 
 
 If you’ve made it this far, thank you for your time.
 
-Best regards,
-
+Best regards,  
 Julian Silva da Cunha
