@@ -37,7 +37,7 @@ const BasicLayout = ({ doc, children }: ArticleLayoutProps) => {
       <article className="article-grid prose dark:prose-dark">
         {children}
         {Array.isArray(tags) && tags.length > 0 && (
-          <div className="mb-2 flex flex-wrap gap-1">
+          <div className="mb-2 flex flex-wrap gap-1.5">
             {tags.map((tag) => (
               <Badge key={tag} variant="default" className="text-xs">
                 {tag}
