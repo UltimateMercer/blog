@@ -18,7 +18,7 @@ export default function Home() {
       <div className="container mx-auto py-8 px-4">
         <section id={listArticles.current} className="flex flex-col gap-6">
           <h1 className="text-3xl font-bold mb-4" id="heading_articles">
-            {language === "en-us" ? "Articles" : "Artigos"}
+            {language === "en-us" ? "Latest articles" : "Últimos artigos"}
           </h1>
           {articles.map((article, index) => (
             <Card

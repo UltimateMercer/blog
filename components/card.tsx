@@ -93,6 +93,13 @@ export const Card = ({
             ))}
           </div>
         )}
+        <Link
+          href={`blog/${slug}`}
+          className="hover:underline mt-1 ml-auto"
+          aria-label={language === "en-us" ? "Read more" : "Leia mais"}
+        >
+          <p>{language === "en-us" ? "Read more" : "Leia mais"}</p>
+        </Link>
       </div>
     </article>
   );

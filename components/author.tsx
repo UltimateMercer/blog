@@ -13,22 +13,9 @@ import {
   MediumLogo,
 } from "@phosphor-icons/react";
 import Link from "next/link";
+import { ariaLabel } from "@/utils/socials";
 export const Author = () => {
   const { language } = useLanguageStore() as LanguageStore;
-
-  const socials = {
-    website: "http://ultimatemercer.com",
-    email: "ultimatemercer.blklight+blog@gmail.com",
-    github: "https://github.com/UltimateMercer",
-    linkedin: "https://www.linkedin.com/in/ultimatemercer/",
-    behance: "https://www.behance.net/ultimatemercer",
-    medium: "https://medium.com/@ultimatemercer",
-    instagram: "",
-  };
-
-  const ariaLabel = (text: string) => {
-    return language === "en-us" ? `Access ${text}` : `Acessar ${text}`;
-  };
 
   return (
     <div className="my-6">
@@ -48,97 +35,11 @@ export const Author = () => {
             Julian Silva da Cunha
           </h4>
           <div className="flex gap-2 md:justify-start justify-center">
-            {socials.website && (
-              <Button variant="outline" size={"icon"} asChild>
-                <Link
-                  href={socials.website}
-                  className="!text-dark-500 hover:!text-dark-900 dark:!text-light-500 hover:dark:!text-light-100"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={ariaLabel("website")}
-                >
-                  <Browser size={24} />
-                </Link>
-              </Button>
-            )}
-            {socials.email && (
-              <Button variant="outline" size={"icon"} asChild>
-                <Link
-                  href={`mailto:${socials.email}`}
-                  className="!text-dark-500 hover:!text-dark-900 dark:!text-light-500 hover:dark:!text-light-100"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={ariaLabel("email")}
-                >
-                  <Envelope size={24} />
-                </Link>
-              </Button>
-            )}
-            {socials.github && (
-              <Button variant="outline" size={"icon"} asChild>
-                <Link
-                  href={socials.github}
-                  className="!text-dark-500 hover:!text-dark-900 dark:!text-light-500 hover:dark:!text-light-100"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={ariaLabel("github")}
-                >
-                  <GithubLogo size={24} />
-                </Link>
-              </Button>
-            )}
-            {socials.linkedin && (
-              <Button variant="outline" size={"icon"} asChild>
-                <Link
-                  href={socials.linkedin}
-                  className="!text-dark-500 hover:!text-dark-900 dark:!text-light-500 hover:dark:!text-light-100"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={ariaLabel("linkedin")}
-                >
-                  <LinkedinLogo size={24} />
-                </Link>
-              </Button>
-            )}
-            {socials.behance && (
-              <Button variant="outline" size={"icon"} asChild>
-                <Link
-                  href={socials.behance}
-                  className="!text-dark-500 hover:!text-dark-900 dark:!text-light-500 hover:dark:!text-light-100"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={ariaLabel("behance")}
-                >
-                  <BehanceLogo size={24} />
-                </Link>
-              </Button>
-            )}
-            {socials.medium && (
-              <Button variant="outline" size={"icon"} asChild>
-                <Link
-                  href={socials.medium}
-                  className="!text-dark-500 hover:!text-dark-900 dark:!text-light-500 hover:dark:!text-light-100"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={ariaLabel("medium")}
-                >
-                  <MediumLogo size={24} />
-                </Link>
-              </Button>
-            )}
-            {socials.instagram && (
-              <Button variant="outline" size={"icon"} asChild>
-                <Link
-                  href={socials.instagram}
-                  className="!text-dark-500 hover:!text-dark-900 dark:!text-light-500 hover:dark:!text-light-100"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={ariaLabel("instagram")}
-                >
-                  <InstagramLogo size={24} />
-                </Link>
-              </Button>
-            )}
+            <p>
+              {language === "en-us"
+                ? "Student/Web Developer/Designer"
+                : "Estudante/Desenvolvedor Web/Designer"}
+            </p>
           </div>
         </div>
       </div>
