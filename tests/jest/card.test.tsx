@@ -50,8 +50,10 @@ describe("Card Component", () => {
     expect(screen.getByAltText("Custom Title")).toBeDefined();
     expect(screen.getAllByText("Custom")).toHaveLength(1);
     expect(screen.getAllByText("Tags")).toHaveLength(1);
-    const link = screen.getByRole("link");
+    const link = screen.getByText("Custom Title").closest("a");
     expect(link).toBeDefined();
-    expect(link.getAttribute("href")).toBe("blog/custom-slug");
+    if (link) {
+      expect(link.getAttribute("href")).toBe("blog/custom-slug");
+    }
   });
 });

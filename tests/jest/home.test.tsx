@@ -55,7 +55,7 @@ describe("Home component", () => {
   it("renders a heading - en-us", () => {
     render(<Home />);
     expect(
-      screen.getByRole("heading", { level: 1, name: "Articles" })
+      screen.getByRole("heading", { level: 1, name: "Latest articles" })
     ).toBeDefined();
   });
 
@@ -65,7 +65,7 @@ describe("Home component", () => {
     });
     render(<Home />);
     expect(
-      screen.getByRole("heading", { level: 1, name: "Artigos" })
+      screen.getByRole("heading", { level: 1, name: "Últimos artigos" })
     ).toBeDefined();
   });
 });

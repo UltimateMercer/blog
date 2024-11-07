@@ -62,14 +62,14 @@ export const Card = ({
 }: ArticleCardProps) => {
   const { language } = useLanguageStore() as LanguageStore;
   return (
-    <article className="group relative !border rounded-lg shadow-lg transition-all min-h-[120px] flex flex-row gap-5 md:flex-row bg-background/20  backdrop-blur-md backdrop-filter hover:shadow pt-6 px-5 pb-5 mb-2 hover:hover-card-dark hover:dark:hover-card-light">
+    <article className="group relative !border rounded-lg shadow-lg transition-all min-h-[120px] flex flex-col gap-5 md:flex-row bg-background/20  backdrop-blur-md backdrop-filter hover:shadow pt-6 px-5 pb-5 mb-2 hover:hover-card-dark hover:dark:hover-card-light">
       <div className="absolute -top-4 bg-background inline-flex items-center px-2 py-1.5 rounded font-medium tracking-wide leading-none text-black dark:text-white !border">
         <FormatFullDate date={date} locale={language} />
       </div>
-      <div className="h-36 w-52 rounded-lg border">
+      <div className="md:h-36 md:w-52 h-64 w-full rounded-lg border">
         <img
           alt={title}
-          className="h-36 w-52 rounded-lg !object-cover border"
+          className="md:h-36 md:w-52 h-64 w-full rounded-lg !object-cover border"
           src={image ? image : "/public/ultimate-mercer-base.jpg"}
           style={{
             objectFit: "cover",
