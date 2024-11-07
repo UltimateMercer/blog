@@ -19,9 +19,17 @@ import {
 
 import { Languages } from "lucide-react";
 import type { LanguageStore } from "@/utils/interfaces";
+import { useParams, redirect } from "next/navigation";
 
 export function LangSwitcher() {
   const { language, setLanguage } = useLanguageStore() as LanguageStore;
+
+  const param = useParams();
+  const currentParams = useParams();
+
+  if (currentParams.lang && language !== currentParams.lang) {
+    return redirect(`/${language}/${param.slug}`);
+  }
 
   return (
     <DropdownMenu>
