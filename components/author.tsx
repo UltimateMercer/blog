@@ -24,7 +24,7 @@ export const Author = () => {
       </h3>
       <div className="flex md:flex-row gap-6 flex-col items-center">
         <Image
-          src={"/blog/images/me.jpg"}
+          src={"/images/me.jpg"}
           className={`w-36 h-36 rounded-full object-cover hover:scale-110 hover:ring-2 ring-gray-300 hover:shadow-lg transition-all !my-0`}
           width={144}
           height={144}

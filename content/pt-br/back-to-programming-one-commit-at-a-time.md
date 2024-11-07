@@ -2,7 +2,7 @@
 title: "Voltando a programar: Um commit de cada vez"
 description: "Reflexões sobre o compromisso de realizar contribuições diárias e os projetos que quero desenvolver."
 date: "2024-11-06 19:23"
-image: "/blog/articles/progress-consistency.jpg"
+image: "/articles/progress-consistency.jpg"
 tags:
   - Desenvolvimento Pessoal
   - Consistência

@@ -29,7 +29,7 @@ export function NavigationBar({
           <div className="inline-flex mr-4">
             <Link href="/" className="">
               <img
-                src="/blog/images/ultimate-logo-red.svg"
+                src="/images/ultimate-logo-red.svg"
                 className="!max-w-none mx-auto w-[56px] h-[56px] hidden dark:block"
                 width="56"
                 height="56"
@@ -39,7 +39,7 @@ export function NavigationBar({
 
             <Link href="/">
               <img
-                src="/blog/images/ultimate-logo-dark.svg"
+                src="/images/ultimate-logo-dark.svg"
                 className="!max-w-none mx-auto w-[56px] h-[56px] block dark:hidden"
                 width="56"
                 height="56"

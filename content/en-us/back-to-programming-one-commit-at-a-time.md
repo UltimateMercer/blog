@@ -2,7 +2,7 @@
 title: "Back to Programming: One Commit at a Time"
 description: "Reflections on the commitment to make daily contributions and the projects I aim to develop."
 date: "2024-11-06 19:23"
-image: "/blog/articles/progress-consistency.jpg"
+image: "/articles/progress-consistency.jpg"
 tags:
   - Personal Development
   - Consistency

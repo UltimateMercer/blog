@@ -2,7 +2,7 @@
 title: "Por que criar um blog?"
 description: "Uma reflexão sobre a criação do meu blog pessoal, abordando a importância de compartilhar projetos e experiências para desenvolver habilidades de comunicação e escrita."
 date: "2024-10-29 19:47"
-image: "/blog/articles/ultimate-mercer-base.jpg"
+image: "/articles/ultimate-mercer-base.jpg"
 tags:
   - "Blog"
   - "Comunicação"

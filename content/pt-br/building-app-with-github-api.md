@@ -2,7 +2,7 @@
 title: "Criando uma aplicação com a API do GitHub: minha experiência e aprendizados"
 description: "Compartilho minha experiência ao desenvolver uma aplicação que exibe dados de usuários do GitHub, utilizando tecnologias como SvelteKit, Octokit e Vercel."
 date: "2024-11-05 11:34"
-image: "/blog/articles/github-data-project-logo.jpg"
+image: "/articles/github-data-project-logo.jpg"
 tags:
   - Github
   - SvelteKit
@@ -32,15 +32,15 @@ Você também pode acessá-la com um nome de usuário pré-definido, por exemplo
 
 Realizei um teste de desempenho com o Lighthouse para verificar performance, acessibilidade, boas práticas e SEO, e obtive resultados excelentes. Embora haja uma leve oscilação na performance, os resultados iniciais foram melhores do que eu esperava, dado que não foquei tanto em otimização de performance.
 
-![Performance Lighthouse](../../../../blog/articles/github-data-project-performance.jpg)
+![Performance Lighthouse](../../../../articles/github-data-project-performance.jpg)
 
 ### Algumas capturas de tela da aplicação:
 
-![Captura 1](../../../../blog/articles/github-data-project-1.jpg)
+![Captura 1](../../../../articles/github-data-project-1.jpg)
 
-![Captura 2](../../../../blog/articles/github-data-project-2.jpg)
+![Captura 2](../../../../articles/github-data-project-2.jpg)
 
-![Captura 3](../../../../blog/articles/github-data-project-3.jpg)
+![Captura 3](../../../../articles/github-data-project-3.jpg)
 
 Desenvolver esse projeto foi uma experiência valiosa, tanto em termos de aprendizado quanto no uso de ferramentas. Um ponto de melhoria seria a fase de planejamento, já que precisei refatorar a estrutura para integrar o @tanstack/query.
 

@@ -77,7 +77,7 @@ export const Card = ({
         />
       </div>
       <div className="flex flex-1 flex-col gap-1 overflow-hidden py-1">
-        <Link href={`blog/${slug}`} className="hover:underline">
+        <Link href={`${slug}`} className="hover:underline">
           <h2 className="text-2xl font-bold leading-normal">{title}</h2>
         </Link>
         <p className="mb-2 text-sm text-gray-600 dark:text-gray-300 line-clamp-3">
@@ -94,7 +94,7 @@ export const Card = ({
           </div>
         )}
         <Link
-          href={`blog/${slug}`}
+          href={`${slug}`}
           className="hover:underline mt-1 ml-auto"
           aria-label={language === "en-us" ? "Read more" : "Leia mais"}
         >

@@ -2,7 +2,7 @@
 title: "Building an App with the GitHub API: My Experience and Learnings"
 description: "Sharing my journey in developing an app to display GitHub user data, using technologies like SvelteKit, Octokit, and Vercel."
 date: "2024-11-05 11:34"
-image: "/blog/articles/github-data-project-logo.jpg"
+image: "/articles/github-data-project-logo.jpg"
 tags:
   - Github
   - SvelteKit
@@ -32,15 +32,15 @@ You can also access it with a pre-defined username, like this: [https://githubda
 
 I ran a performance test with Lighthouse to check for performance, accessibility, best practices, and SEO, and I achieved excellent results. While performance varies slightly, the initial results were better than expected, considering I hadn’t focused much on optimization.
 
-![Performance Lighthouse](../../../../blog/articles/github-data-project-performance.jpg)
+![Performance Lighthouse](../../../../articles/github-data-project-performance.jpg)
 
 ### Some screenshots of the application:
 
-![Screenshot 1](../../../../blog/articles/github-data-project-1.jpg)
+![Screenshot 1](../../../../articles/github-data-project-1.jpg)
 
-![Screenshot 2](../../../../blog/articles/github-data-project-2.jpg)
+![Screenshot 2](../../../../articles/github-data-project-2.jpg)
 
-![Screenshot 3](../../../../blog/articles/github-data-project-3.jpg)
+![Screenshot 3](../../../../articles/github-data-project-3.jpg)
 
 Overall, this project was a valuable experience in terms of learning and using new tools. One area for improvement would be the planning phase, as I had to refactor the structure to integrate @tanstack/query.
 

@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="flex items-center justify-center py-2">
           <Link href="/" className="">
             <img
-              src="/blog/images/ultimate-logo-red.svg"
+              src="/images/ultimate-logo-red.svg"
               className="hidden dark:block"
               width="100"
               height="100"
@@ -24,7 +24,7 @@ const Footer = () => {
 
           <Link href="/" className="">
             <img
-              src="/blog/images/ultimate-logo-dark.svg"
+              src="/images/ultimate-logo-dark.svg"
               className="block dark:hidden"
               width="100"
               height="100"
