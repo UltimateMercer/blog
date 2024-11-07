@@ -6,7 +6,7 @@ describe("Articles", () => {
   let oldArticleHref: string = "";
 
   beforeEach(() => {
-    cy.visit("http://localhost:3000/blog", { timeout: 120000 });
+    cy.visit("http://localhost:3000/", { timeout: 120000 });
   });
 
   it("successfully loads", () => {

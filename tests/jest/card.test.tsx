@@ -53,7 +53,7 @@ describe("Card Component", () => {
     const link = screen.getByText("Custom Title").closest("a");
     expect(link).toBeDefined();
     if (link) {
-      expect(link.getAttribute("href")).toBe("blog/custom-slug");
+      expect(link.getAttribute("href")).toBe("custom-slug");
     }
   });
 });
