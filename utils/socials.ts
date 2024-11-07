@@ -10,7 +10,7 @@ import {
 
 export const links = {
   website: "http://ultimatemercer.com",
-  email: "ultimatemercer.blklight+blog@gmail.com",
+  email: "mailto:ultimatemercer.blklight+blog@gmail.com",
   github: "https://github.com/UltimateMercer",
   linkedin: "https://www.linkedin.com/in/ultimatemercer/",
   behance: "https://www.behance.net/ultimatemercer",

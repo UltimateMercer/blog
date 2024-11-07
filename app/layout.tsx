@@ -39,11 +39,36 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://blog.ultimatemercer.com"),
   title: {
     default: "Blog by Ultimate Mercer",
     template: "%s - Blog by Ultimate Mercer",
   },
   description: "Blog by Ultimate Mercer",
+  alternates: {
+    canonical: "/",
+  },
+  // Open Graph metadata for rich previews on social media platforms
+  openGraph: {
+    title: "Blog by Ultimate Mercer",
+    description: "Blog by Ultimate Mercer",
+    url: "https://blog.ultimatemercer.com",
+    siteName: "Blog",
+    images: [
+      {
+        url: "https://blog.ultimatemercer.com/ultimate-mercer-base.jpg",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog by Ultimate Mercer",
+    description: "Blog by Ultimate Mercer",
+    creator: "@ultimatemercer",
+    images: ["https://blog.ultimatemercer.com/ultimate-mercer-base.jpg"],
+  },
 };
 
 export default function RootLayout({
