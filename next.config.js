@@ -6,7 +6,6 @@ const { withContentlayer } = require("next-contentlayer");
 
 const nextConfig = {
   output: "export",
-  basePath: "/blog",
   reactStrictMode: true,
   images: {
     unoptimized: true,
