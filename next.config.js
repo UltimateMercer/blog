@@ -4,14 +4,14 @@ const { withContentlayer } = require("next-contentlayer");
 /** @type {import('next').NextConfig} */
 
 
-const nextConfig = withContentlayer({
+const nextConfig = {
   basePath: "/blog",
   reactStrictMode: true,
   images: {
     unoptimized: true,
   },
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
-});
+};
 
 // export default nextConfig;
 // export default withContentlayer(nextConfig);
