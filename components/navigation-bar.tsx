@@ -20,7 +20,7 @@ export function NavigationBar({
   const { language } = useLanguageStore() as LanguageStore;
 
   return (
-    <div className="border-b sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backgrop-filter]:bg-background/60">
+    <div className="sticky top-0 z-50 w-full border-border/40 bg-background/75 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="flex h-16 justify-between items-center px-4">
         <nav
           className={cn("flex items-center space-x-4 lg:space-x-6", className)}

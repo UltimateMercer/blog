@@ -24,5 +24,5 @@ Another important point is that I have countless projects I’ve always wanted t
 
 Currently, I’m focused on web development projects, but at some point, I’d like to return to my digital art projects (as I’m a digital design student) and stay consistent in my journey toward my goals.
 
-Best regards,
+Best regards,  
 Julian Silva da Cunha
