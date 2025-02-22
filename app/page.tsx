@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 import { useLanguageStore } from "../store/useLanguageStore";
-import { GlassCard, Card } from "@/components/card";
+import { GlassCard, Card, BackgroundCard } from "@/components/card";
 import { getArticles } from "@/services";
 import type { LanguageStore } from "@/utils/interfaces";
 
@@ -16,18 +16,24 @@ export default function Home() {
   return (
     <main>
       <div className="container mx-auto py-8 px-4">
-        <section id={listArticles.current} className="flex flex-col gap-6">
-          <h1 className="text-3xl font-bold mb-4" id="heading_articles">
-            {language === "en-us" ? "Latest articles" : "Últimos artigos"}
-          </h1>
-          {articles.map((article, index) => (
+        <h1 className="text-3xl font-bold mb-4" id="heading_articles">
+          {language === "en-us" ? "Latest articles" : "Últimos artigos"}
+        </h1>
+        <section id={listArticles.current} className="grid grid-cols-3 gap-4">
+          {/* {articles.map((article, index) => (
             <Card
               key={article.slug}
               data-testid={`article-card-${index}`}
               {...article}
             />
+          ))} */}
+          {articles.map((article, index) => (
+            <BackgroundCard
+              key={article.slug}
+              data-testid={`article-card-${index}`}
+              {...article}
+            />
           ))}
-
           {/* {articles.map((article) => (
             <GlassCard key={article.slug} {...article} />
           ))} */}

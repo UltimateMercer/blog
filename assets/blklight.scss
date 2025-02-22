@@ -87,6 +87,14 @@
   }
 }
 
+.marker-line {
+  display: inline;
+  float: none;
+  padding: 0 0.5rem 0.25rem;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
 @import "scss/mixins";
 @import "scss/base";
 @import "scss/extra";
