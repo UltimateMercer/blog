@@ -120,7 +120,7 @@ export const BackgroundCard = ({
     <article className="flex min-w-0 flex-col relative overflow-hidden cursor-default rounded-xl transition-all hover:hover-card-dark hover:dark:hover-card-light">
       <img
         alt={title}
-        className="object-cover max-w-full h-[600px] block rounded-xl scale-125"
+        className="object-cover max-w-full h-[650px] block rounded-xl scale-125"
         src={image ? image : "/public/ultimate-mercer-base.jpg"}
       />
       <div className="absolute top-0 right-0 left-0 bottom-0 p-5 rounded flex flex-col justify-end">
