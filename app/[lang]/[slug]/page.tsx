@@ -1,8 +1,6 @@
 import { MDXComponents } from "@/components/mdx";
 import { getArticles } from "@/services";
 import { notFound, redirect } from "next/navigation";
-import type { LanguageStore } from "@/utils/interfaces";
-import { useLanguageStore } from "@/store/useLanguageStore";
 import { Metadata, ResolvingMetadata } from "next";
 import { allArticles } from "contentlayer/generated";
 
@@ -12,6 +10,11 @@ type Props = {
 
 export async function generateStaticParams() {
   const articles = allArticles;
+  const test = articles.map((article) => ({
+    example: article.slug,
+    slug: article.slug.replace(/en-us\/|pt-br\//, ""),
+  }));
+  console.log(test);
   return articles.map((article) => ({
     lang: article.lang,
     slug: article.slug.replace(/en-us\/|pt-br\//, ""),
